@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"\>
+        <title>SOMESITE</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="air-slider/air-slider.min.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="7.png" width="200px" height="200px">
+            </div>
+
+            <div class="someText">
+                <font>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis adipisci porro possimus tempora magnam perferendis. Aut, ipsum ratione eius laboriosam quisquam explicabo impedit. Modi suscipit earum velit culpa magni!</font>
+
+            </div>
+
+            <div class="contacts">
+                <a href="tel: 555-555" style="color: white; text-decoration: none;"><h2>Звоните нам: 555-555</h2></a>
+                <a href="tg: @denchicka213"><img src="tg.png" width="64px" height="64px"></a>
+                <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="64px" height="64px" style="margin-left: 10px; margin-right: 10px;"></a>
+                <a href="https://www.instagram.com/"><img src="insta.svg" width="64px" height="64px"></a>
+            </div>
+        </header>
+
+        <nav class="navBar">
+
+            <a href="index.html">
+                <div class="main__nav mrgn">
+                    Главная
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="about__nav mrgn1">
+                    О нас
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="glry__nav mrgn2">
+                    Галерея
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="contacts__nav mrgn3">
+                    Контакты
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="cass__nav mrgn4">
+                    Кассы
+                </div>
+            </a>
+        </nav>
+
+        <section style="margin-top: 15px;">
+            <div class="galery">
+
+                <div class="air-slider" style="display: flex; width: 100%; height: 350px; object-fit: cover; object-position: bottom; " id="galeryId">
+
+                   <div class="slide">
+                        <img src="img/1.jpg" id="img1" style="border-radius: 11px;">
+                        <h1 style="position: absolute; top: 20%">SomeTextForExample</h1>
+                        <button class="slideButton">Подробнее</button>
+                    </div>
+
+                    <div class="slide" id="img2" style="border-radius: 10px;">
+                        <img src="img/2.jpg">
+                        <h1 style="position: absolute; top: 20%">SomeTextForExample2</h1>
+                        <button class="slideButton">Подробнее</button>
+                    </div>
+
+                    <div class="slide" id="img3" style="border-radius: 10px;">
+                        <img src="img/3.jpg">
+                        <h1 style="position: absolute; top: 20%">SomeTextForExample2</h1>
+                        <button class="slideButton">Подробнее</button>
+                    </div>
+
+                </div>
+                <script src="air-slider/air-slider.min.js"></script>
+                <script>
+                    var slider = new airSlider({
+                        autoPlay: true,
+                        width: '1920px',
+                        height: '350px',
+                        autoPlayTime: 5000
+                    });
+                </script>
+            </div>
+        </section>
+
+       <section class="divsDown">
+            <div class="afisha__wrapper">
+                <div class="afisha__item">
+                    <img src="img/div/item_3440.jpg" style="border-radius: 10px 10px 0 0; box-shadow: 1px 2px 3px black">
+                    <div class="afisha__info">
+                        <div class="afisha__title">Лето балета. Золушка</div>
+                        <div class="afisha__date">23 июля 2023г. в 13:00</div>
+                        <div class="afisha__add">
+                            <p>Театр драмы</p>
+                            <p>1000 - 2600</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afisha__item">
+                    <img src="img/div/item_3440.jpg" style="border-radius: 10px 10px 0 0; box-shadow: 1px 2px 3px black">
+                    <div class="afisha__info">
+                        <div class="afisha__title">Лето балета. Золушка</div>
+                        <div class="afisha__date">23 июля 2023г. в 13:00</div>
+                        <div class="afisha__add">
+                            <p>Театр драмы</p>
+                            <p>1000 - 2600</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afisha__item">
+                    <img src="img/div/item_3440.jpg" style="border-radius: 10px 10px 0 0; box-shadow: 1px 2px 3px black">
+                    <div class="afisha__info">
+                        <div class="afisha__title">Лето балета. Золушка</div>
+                        <div class="afisha__date">23 июля 2023г. в 13:00</div>
+                        <div class="afisha__add">
+                            <p>Театр драмы</p>
+                            <p>1000 - 2600</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afisha__item">
+                    <img src="img/div/item_3440.jpg" style="border-radius: 10px 10px 0 0; box-shadow: 1px 2px 3px black">
+                    <div class="afisha__info">
+                        <div class="afisha__title">Лето балета. Золушка</div>
+                        <div class="afisha__date">23 июля 2023г. в 13:00</div>
+                        <div class="afisha__add">
+                            <p>Театр драмы</p>
+                            <p>1000 - 2600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <footer>
+            <div class="footer">
+                <div class="rights">Все права защищены</div>
+                <div class="corp">(с) 2023</div>
+            </div>
+       </footer>
+        
+    </body>
+</html>
