@@ -1,27 +1,34 @@
 body {
     text-shadow: 1px 1px 10px black;
-    background-color: rgba(100, 100, 100, 1);
+    background-color: white;
+    
 }
 
 a {
     text-decoration: none;
 }
 
+.page {
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     position: relative;
     background-color: rgba(115, 115, 115, 1);
     height: 200px;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-radius: 20px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: calc(50% - 50vw);
 }
 
 .logo {
     margin-left: 30px;
     padding-bottom: 20px;
 }
-
 
 .contacts {
     color: white;
@@ -44,15 +51,22 @@ header {
 .navBar {
     margin-top: 15px;
     padding: 20px;
-    border-radius: 10px;
     background-color: gray;
-    display: flex;
-    justify-content: space-between;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    display: grid;
+    grid-template-columns: repeat(5,minmax(110px,1fr));
     
-    
+    /* Расстояние между ячейкаами в колонке */
+    grid-gap: 10px;
+  
+    /* Выравниваем контент по середине ячейки */
+    justify-items: center;
+
 }
 
-.mrgn, .mrgn1, .mrgn2, .mrgn3, .mrgn4 {
+/* .mrgn, .mrgn1, .mrgn2, .mrgn3, .mrgn4 {
     font-size: 25px;
     color: white;
     padding: 10px;
@@ -61,14 +75,40 @@ header {
     background-color: 0 0 0;
     transition: background-color .3s;
     
+} */
+
+.navBar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    
 }
 
+.navBar a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
 
+.navBar a:hover::before {
+    transform: scaleX(1);
+}
+
+/* 
 .mrgn:hover, .mrgn1:hover, .mrgn2:hover, .mrgn3:hover, .mrgn4:hover {
     background-color: lightgray;
     transition: .3s linear;
     
-}
+} */
 
 .galery {
     border: 1px solid black;
@@ -104,12 +144,21 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 55px;
+
+    
     
 }
 
 .afisha__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(110px,1fr));
+    
+    /* Расстояние между ячейкаами в колонке */
+    grid-gap: 100px 10px;
+  
+    /* Выравниваем контент по середине ячейки */
+    justify-items: center;
+
     text-align: center;
 
 }
@@ -135,25 +184,116 @@ header {
 }
 
 .rights {
-    position: absolute;
-    top: 30%;
-    left: 10%;
     color: black;
     font-size: 20px;
 }
 
 .corp {
-    position: absolute;
-    right: 10%;
-    top: 30%;
     color: black;
     font-size: 20px;
 }
 
-footer {
+
+
+/* О нас */
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-left: calc(50% - 50vw);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientContacts 15s ease infinite;
+    text-align: center;
+}
+
+.contacts__div {
+    color: white;
+    font-size: 30px;
+
     position: absolute;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+   
+}
+
+/* .about__div a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.about__div a:hover {
+    text-decoration: underline;
+    transition: .3s linear;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(103, 187, 155);
+} */
+
+.contacts__div a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.contacts__div  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.contacts__div a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Галерея */
+
+.gallery_sect {
+    background-color: #333;
+}
+
+.gallery_sect li a,
+.gallery_sect li .overLayer, .gallery_sect li .infoLayer {
+    height: 187px;
+    width: 250px;
+}
+
+.gallery_sect li .infoLayer ul li {
+    padding: 5px 0 0;
+}
+
+.footer {
+    margin-top: auto;
     padding: 25px;
     background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+@keyframes gradientContacts {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
