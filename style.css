@@ -223,6 +223,20 @@ main {
    
 }
 
+.about__div {
+    color: white;
+    font-size: 30px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
 /* .about__div a {
     font-size: 25px;
     text-decoration: none;
@@ -326,9 +340,9 @@ main {
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1399px) {
     .afisha__wrapper {
-        grid-template-columns: repeat(4, minmax(110px,1fr));
+        grid-template-columns: repeat(3, minmax(110px, 1fr));
     }
 }
 
