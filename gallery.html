@@ -12,7 +12,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css" />
 	
         <!-- add scripts -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/least.min.js"></script>
         <script src="js/jquery.lazyload.js"></script>
         <script type="text/javascript">
@@ -23,58 +23,57 @@
     </head>
 
     <body>
-        <header>
-            <div class="logo">
-                <img src="7.png" width="200px" height="200px">
-            </div>
-
-            <div class="someText">
-                <font>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis adipisci porro possimus tempora magnam perferendis. Aut, ipsum ratione eius laboriosam quisquam explicabo impedit. Modi suscipit earum velit culpa magni!</font>
-
-            </div>
-
-            <div class="contacts">
-                <a href="tel: 555-555" style="color: white; text-decoration: none;"><h2>Звоните нам: 555-555</h2></a>
-                <a href="tg: @denchicka213"><img src="tg.png" width="64px" height="64px"></a>
-                <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="64px" height="64px" style="margin-left: 10px; margin-right: 10px;"></a>
-                <a href="https://www.instagram.com/"><img src="insta.svg" width="64px" height="64px"></a>
-            </div>
-        </header>
-
-        <nav class="navBar">
-
-            <a href="index.html">
-                <div class="main__nav mrgn">
-                    Главная
+        <div class="page">
+            <header>
+                <div class="logo">
+                    <img src="7.png" width="200px" height="200px">
                 </div>
-            </a>
 
-            <a href="about.html">
-                <div class="about__nav mrgn1">
-                    О нас
+                <div class="someText">
+                    <font>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis adipisci porro possimus tempora magnam perferendis. Aut, ipsum ratione eius laboriosam quisquam explicabo impedit. Modi suscipit earum velit culpa magni!</font>
                 </div>
-            </a>
 
-            <a href="galery.html">
-                <div class="glry__nav mrgn2">
-                    Галерея
+                <div class="contacts">
+                    <a href="tel: 555-555" style="color: white; text-decoration: none;"><h3 style="font-size: 20px; text-align: center;">Звоните нам: 555-555</h3></a> <br>
+                    <a href="tg: @denchicka213"><img src="tg.png" width="64px" height="64px"></a>
+                    <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="64px" height="64px" style="margin-left: 10px; margin-right: 10px;"></a>
+                    <a href="https://www.instagram.com/"><img src="insta.svg" width="64px" height="64px"></a>
                 </div>
-            </a>
+            </header>
 
-            <a href="contacts.html">
-                <div class="contacts__nav mrgn3">
-                    Контакты
-                </div>
-            </a>
+            <nav class="navBar">
 
-            <a href="kassy.html">
-                <div class="cass__nav mrgn4">
-                    Кассы
-                </div>
-            </a>
-        </nav>
+                <a href="index.html">
+                    <div class="main__nav mrgn">
+                        Главная
+                    </div>
+                </a>
 
-        <main>
+                <a href="about.html">
+                    <div class="about__nav mrgn1">
+                        О нас
+                    </div>
+                </a>
+
+                <a href="gallery.html">
+                    <div class="gllry__nav mrgn2">
+                        Галерея
+                    </div>
+                </a>
+
+                <a href="contacts.html">
+                    <div class="contacts__nav mrgn3">
+                        Контакты
+                    </div>
+                </a>
+
+                <a href="kassy.html">
+                    <div class="cass__nav mrgn4">
+                        Кассы
+                    </div>
+                </a>
+            </nav>
+
             <section class="gallery__sect">
                 <ul id="gallery">
                     <li id="fullPreview"></li>
@@ -138,22 +137,13 @@
                     </li>
                 </ul>
             </section>
-        </main>
-        <!-- jQuery libary -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <!-- least.js JS-file -->
-        <script src="js/least.min.js"></script>
-        <!-- Lazyload JS-file -->
-        <script src="js/jquery.lazyload.js"></script>
 
-        
+            
 
-       <footer>
             <div class="footer">
-                <div class="rights">Все права защищены</div>
-                <div class="corp">(с) 2023</div>
+                <p class="rights">Все права защищены</p>
+                <p class="corp">(с) 2023</p>
             </div>
-       </footer>
-        
+        </div>
     </body>
 </html>

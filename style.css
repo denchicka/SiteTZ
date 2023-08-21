@@ -1,6 +1,6 @@
 body {
     text-shadow: 1px 1px 10px black;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     
 }
 
@@ -30,7 +30,7 @@ header {
     padding-bottom: 20px;
 }
 
-.contacts {
+.contacts, .contacts__h2 {
     color: white;
     position: absolute;
     right: 50px;
@@ -176,7 +176,7 @@ header {
 }
 
 .afisha__info {
-    background-color: rgba(142, 141, 224, 0.5);
+    background-color: rgba(85, 230, 237, 0.5);
     color: white;
     font-size: 20px;
     padding: 15px;
@@ -264,6 +264,7 @@ main {
 
 .gallery_sect {
     background-color: #333;
+    
 }
 
 .gallery_sect li a,
@@ -297,3 +298,39 @@ main {
 		background-position: 0% 50%;
 	}
 }
+
+
+@media (min-width: 480px) and (max-width:767px){
+    .afisha__wrapper {
+        grid-template-columns: repeat(1, minmax(110px,1fr));
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .afisha__wrapper {
+        grid-template-columns: repeat(2, minmax(110px,1fr));
+    }
+
+    .someText {
+        left: 30%;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1170px){
+    .afisha__wrapper {
+        grid-template-columns: repeat(3, minmax(110px,1fr));
+    }
+
+    .someText {
+        left: 35%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .afisha__wrapper {
+        grid-template-columns: repeat(4, minmax(110px,1fr));
+    }
+}
+
+
+
