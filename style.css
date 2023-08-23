@@ -301,6 +301,67 @@ main {
     
 }
 
+.description__main {
+    background-color: rgb(112, 120, 233);
+    max-width: 1500px;
+    position: relative;
+    width: 100vw;
+    text-align: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.description__div {
+    display: flex;
+}
+
+.description__img {
+    margin-top: 50px;
+}
+
+.description__text {
+    margin-top: 200px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.description__name {
+    position: absolute;
+    left: 42.5%;
+    font-size: 30px;
+    font-weight: bolder;
+    top: 5%;
+}
+
+.description__opis {
+    max-width: 1500px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.description__gallery {
+    max-width: 1500px;
+    background-color: rgb(128, 113, 212);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(110px,1fr));
+    
+    /* Расстояние между ячейкаами в колонке */
+    grid-gap: 20px;
+  
+    /* Выравниваем контент по середине ячейки */
+    justify-items: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.gallery__img {
+    border-radius: 10px;
+}
+
 @keyframes gradientContacts {
 	0% {
 		background-position: 0% 50%;
