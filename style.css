@@ -350,12 +350,18 @@ main {
     grid-template-columns: repeat(3,minmax(110px,1fr));
     
     /* Расстояние между ячейкаами в колонке */
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
   
     /* Выравниваем контент по середине ячейки */
     justify-items: center;
     margin-bottom: 50px;
     border-radius: 20px;
+}
+
+.gallery__main:hover {
+    transform: scale(1.1);
+    transition: .3s linear;
 }
 
 .gallery__img {

@@ -8,6 +8,10 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="air-slider/air-slider.min.css">
         <script src="script.js"></script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" /> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
     </head>
 
     <body>
@@ -68,7 +72,7 @@
                     <div class="description__div">
                         <div class="description__name">Название спектакля</div>
                         <div class="description__img">
-                            <img src="img/1.jpg" width="300px" height="400px">
+                            <img src="img/1.jpg" width="300px" height="400px" style="border-radius: 10px;">
                         </div>
                         <div class="description__text">
                             <font size="5">25 сентября 2023 г. 19:00</font> <br> <br>
@@ -92,7 +96,7 @@
                 <h2>Галерея</h2> <br> <br>
                 <section class="description__gallery">
                     
-                    <div class="gallery__main">
+                    <!-- <div class="gallery__main">
                         <div class="gallery__photo">
                             <img src="img/1.jpg" width="400px" height="300px" class="gallery__img">
                         </div>
@@ -124,15 +128,35 @@
 
                     <div class="gallery__main">
                         <div class="gallery__photo">
-                            <img src="img/1.jpg" width="400px" height="300px" class="gallery__img">
+                            
                         </div>
-                    </div>
+                    </div> -->
+
+
+
+                    <p>
+                        <a href="img/1.jpg" data-fancybox="images">
+                            <img src="img/1.jpg" width="400px" height="300px" class="gallery__img">
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="img/2.jpg" data-fancybox="images">
+                            <img src="img/2.jpg" width="400px" height="300px" class="gallery__img">
+                        </a>
+                    </p>
+
+
+                    <p>
+                        <a href="img/3.jpg" data-fancybox="images">
+                            <img src="img/3.jpg" width="400px" height="300px" class="gallery__img">
+                        </a>
+                    </p>
                 </section>
 
                 
             </center>
             
-
 
             <div class="footer">
                 <p class="rights">Все права защищены</p>
