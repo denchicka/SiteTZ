@@ -525,6 +525,11 @@ main {
         top: 5%;
     }
 
+    .contacts__div {
+        font-size: 20px;
+        width: 80%;
+    }
+
     
 }
 
@@ -563,6 +568,11 @@ main {
 
     .slideButton {
         top: 5%;
+    }
+
+    .contacts__div {
+        font-size: 20px;
+        width: 80%;
     }
    
     
