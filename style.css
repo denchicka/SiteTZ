@@ -535,6 +535,7 @@ main {
     .contacts__div {
         font-size: 20px;
         width: 80%;
+        position: relative;
     }
 
     .description__gallery {
