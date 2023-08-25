@@ -553,7 +553,7 @@ main {
     
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .someText {
         display: none;
     }
@@ -565,16 +565,26 @@ main {
 
     .description__name {
         left: 25.5%;
+        font-size: 25px;
     }
 
     .description__text {
-        margin-top: 150px;
+        margin-top: 100px;
         font-size: 15px;
     }
 
     .description__img__cart {
-        height: 300px;
-        width: 250px;
+        height: 200px;
+        width: 150px;
+    }
+
+    .description__opis {
+        font-size: 15px;
+    }
+
+    .gallery__img {
+        width: 300px;
+        height: 200px;
     }
 }
 
