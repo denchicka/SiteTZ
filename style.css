@@ -506,6 +506,20 @@ main {
         font-size: 15px;
     }
 
+    .img__cont {
+        height: 25px;
+        width: 25px;
+    }
+
+    .rights, .corp {
+        font-size: 10px;
+        padding-top: 30px;
+    }
+
+    .about__div {
+        font-size: 20px;
+    }
+
     
 }
 
