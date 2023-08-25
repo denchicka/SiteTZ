@@ -513,7 +513,7 @@ main {
 
     .about__div {
         font-size: 20px;
-        width: 0;
+        width: 100%;
     }
 
     .img__cont__center {
@@ -552,6 +552,10 @@ main {
         font-size: 15px;
     }
     
+    .about__div {
+        font-size: 20px;
+        width: 100%;
+    }
    
     
 }
