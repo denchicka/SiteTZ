@@ -193,17 +193,12 @@ header {
     border-radius: 0 0 10px 10px;
 }
 
-.rights {
+.rights, .corp {
     color: black;
     font-size: 20px;
-    padding-top: 40px;
 }
 
-.corp {
-    color: black;
-    font-size: 20px;
-    padding-top: 40px;
-}
+
 
 
 
@@ -508,7 +503,7 @@ main {
 
     .rights, .corp {
         font-size: 10px;
-        padding-top: 30px;
+        padding-top: 5px;
     }
 
     .about__div {
