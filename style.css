@@ -490,11 +490,6 @@ main {
         display: none;
     }
 
-    .footer__contacts {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
     .footer__contacts h2{
         font-size: 15px;
         text-align: center;
