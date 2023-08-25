@@ -443,6 +443,18 @@ main {
 	}
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+    .description__text {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .description__img__cart {
+        height: 200px;
+        width: 150px;
+    }
+}
+
 @media (min-width: 300px) and (max-width:640px){
     .afisha__wrapper {
         grid-template-columns: repeat(1, minmax(110px,1fr));
