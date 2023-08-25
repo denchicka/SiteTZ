@@ -3,7 +3,6 @@
 <html>
     <head>
         <meta charset="UTF-8"\>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SOMESITE</title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="air-slider/air-slider.min.css">
@@ -13,7 +12,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css" />
 	
         <!-- add scripts -->
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/least.min.js"></script>
         <script src="js/jquery.lazyload.js"></script>
         <script type="text/javascript">
@@ -24,67 +23,57 @@
     </head>
 
     <body>
-        <header>
-            <div class="logo">
-                <img src="7.png" width="200px" height="200px" class="logo__img">
-            </div>
+        <div class="page">
+            <header>
+                <div class="logo">
+                    <img src="7.png" width="200px" height="200px">
+                </div>
 
-            <div class="someText">
-                <font>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis adipisci porro possimus tempora magnam perferendis. Aut, ipsum ratione eius laboriosam quisquam explicabo impedit. Modi suscipit earum velit culpa magni!</font>
+                <div class="someText">
+                    <font>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis adipisci porro possimus tempora magnam perferendis. Aut, ipsum ratione eius laboriosam quisquam explicabo impedit. Modi suscipit earum velit culpa magni!</font>
+                </div>
 
-            </div>
-
-            <div class="contacts__gall">
-                <a href="tel: 555-555" style="color: white; text-decoration: none;"><h2>Звоните нам: 555-555</h2></a>
-                <div class="contacts__imgs">
+                <div class="contacts">
+                    <a href="tel: 555-555" style="color: white; text-decoration: none;"><h3 style="font-size: 20px; text-align: center;">Звоните нам: 555-555</h3></a> <br>
                     <a href="tg: @denchicka213"><img src="tg.png" width="64px" height="64px"></a>
                     <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="64px" height="64px" style="margin-left: 10px; margin-right: 10px;"></a>
                     <a href="https://www.instagram.com/"><img src="insta.svg" width="64px" height="64px"></a>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <nav class="navBar" id="navBar__block">
+            <nav class="navBar">
 
-            <div class="navBar__line" onclick="navShow(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+                <a href="index.html">
+                    <div class="main__nav mrgn">
+                        Главная
+                    </div>
+                </a>
 
-            
-            <a href="index.html" id="link__main">
-                <div class="main__nav mrgn">
-                    Главная
-                </div>
-            </a>
+                <a href="about.html">
+                    <div class="about__nav mrgn1">
+                        О нас
+                    </div>
+                </a>
 
-            <a href="about.html" id="link__about">
-                <div class="about__nav mrgn1">
-                    О нас
-                </div>
-            </a>
+                <a href="gallery.html">
+                    <div class="gllry__nav mrgn2">
+                        Галерея
+                    </div>
+                </a>
 
-            <a href="gallery.html" id="link__gallery">
-                <div class="gllry__nav mrgn2">
-                    Галерея
-                </div>
-            </a>
+                <a href="contacts.html">
+                    <div class="contacts__nav mrgn3">
+                        Контакты
+                    </div>
+                </a>
 
-            <a href="contacts.html" id="link__contacts">
-                <div class="contacts__nav mrgn3">
-                    Контакты
-                </div>
-            </a>
+                <a href="kassy.html">
+                    <div class="cass__nav mrgn4">
+                        Кассы
+                    </div>
+                </a>
+            </nav>
 
-            <a href="kassy.html" id="link__kassy">
-                <div class="cass__nav mrgn4">
-                    Кассы
-                </div>
-            </a>
-        </nav>
-
-        <main>
             <section class="gallery__sect">
                 <ul id="gallery">
                     <li id="fullPreview"></li>
@@ -148,28 +137,21 @@
                     </li>
                 </ul>
             </section>
-        </main>
-        <!-- jQuery libary -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <!-- least.js JS-file -->
-        <script src="js/least.min.js"></script>
-        <!-- Lazyload JS-file -->
-        <script src="js/jquery.lazyload.js"></script>
 
-        
+            
 
-        <div class="footer__gall">
-            <p class="rights">Все права защищены</p>
-            <div class="footer__contacts">
-                <a href="tel: 555-555" style="color: black; text-decoration: none;"><h2>Звоните нам: 555-555</h2></a> 
-                <div class="imgs__container">
-                    <a href="tg: @denchicka213"><img src="tg.png" width="32px" height="32px" class="img__cont"></a>
-                    <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="32px" height="32px" style="margin-left: 10px; margin-right: 10px;" class="img__cont"></a>
-                    <a href="https://www.instagram.com/"><img src="insta.svg" width="32px" height="32px" class="img__cont"></a>
+            <div class="footer">
+                <p class="rights">Все права защищены</p>
+                <div class="footer__contacts">
+                    <a href="tel: 555-555" style="color: black; text-decoration: none;"><h2>Звоните нам: 555-555</h2></a> 
+                    <div class="imgs__container">
+                        <a href="tg: @denchicka213"><img src="tg.png" width="32px" height="32px" class="img__cont"></a>
+                        <a href="https://web.whatsapp.com/send/?phone=79221042166&text&type=phone_number&app_absent=0"><img src="ws.svg" width="32px" height="32px" style="margin-left: 10px; margin-right: 10px;" class="img__cont"></a>
+                        <a href="https://www.instagram.com/"><img src="insta.svg" width="32px" height="32px" class="img__cont"></a>
+                    </div>
                 </div>
+                <p class="corp">(с) 2023</p>
             </div>
-            <p class="corp">(с) 2023</p>
         </div>
-        
     </body>
 </html>

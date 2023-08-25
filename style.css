@@ -54,6 +54,8 @@ header {
     background-color: gray;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+    height: 50px;
+    transition: height .3s ease-in;
 
     display: grid;
     grid-template-columns: repeat(5,minmax(110px,1fr));
@@ -63,6 +65,7 @@ header {
   
     /* Выравниваем контент по середине ячейки */
     justify-items: center;
+
 
 }
 
@@ -76,6 +79,11 @@ header {
     transition: background-color .3s;
     
 } */
+
+.navBar__line {
+    display: none;
+    max-height: 40px;
+}
 
 .navBar a {
     position: relative;
@@ -102,6 +110,8 @@ header {
 .navBar a:hover::before {
     transform: scaleX(1);
 }
+
+
 
 /* 
 .mrgn:hover, .mrgn1:hover, .mrgn2:hover, .mrgn3:hover, .mrgn4:hover {
@@ -186,11 +196,13 @@ header {
 .rights {
     color: black;
     font-size: 20px;
+    padding-top: 40px;
 }
 
 .corp {
     color: black;
     font-size: 20px;
+    padding-top: 40px;
 }
 
 
@@ -221,6 +233,28 @@ main {
     height: 30%;
     margin: auto;
    
+}
+
+.contacts__imgs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contacts__gall {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.contacts__gall h2 {
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .about__div {
@@ -298,7 +332,17 @@ main {
     display: flex;
     justify-content: space-between;
     
-    
+}
+
+.imgs__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.img__cont {
+    height: 50px;
+    width: 50px;
 }
 
 .description__main {
@@ -368,6 +412,22 @@ main {
     border-radius: 10px;
 }
 
+.footer__gall {
+
+    margin-top: 50px;
+    padding: 25px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer__gall h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
 @keyframes gradientContacts {
 	0% {
 		background-position: 0% 50%;
@@ -380,20 +440,109 @@ main {
 	}
 }
 
-
-@media (min-width: 480px) and (max-width:767px){
+@media (min-width: 300px) and (max-width:640px){
     .afisha__wrapper {
         grid-template-columns: repeat(1, minmax(110px,1fr));
     }
+
+    .someText {
+        left: 30%;
+    }
+
+    .logo__img {
+        height: 150px;
+        width: 150px;
+        margin-top: 5%
+    }
+
+    .navBar__line {
+        display: inline-block;
+        cursor: pointer;    
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .navBar{
+        position: relative;
+        transition: height .3s ease-in;
+        grid-template-columns: none;
+    }
+
+    .navBar a {
+        display: none;
+    }
+
+    .footer__contacts h2{
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .afisha__info {
+        font-size: 15px;
+    }
+
+    
 }
 
-@media (min-width: 768px) and (max-width:991px){
+@media (max-width:500px) {
+    .someText {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 640px) and (max-width:991px){
     .afisha__wrapper {
         grid-template-columns: repeat(2, minmax(110px,1fr));
     }
 
     .someText {
         left: 30%;
+    }
+
+    .main__nav mrgn {
+        margin-top: 20px;
+    }
+
+    .afisha__info {
+        font-size: 15px;
+    }
+    
+   
+    
+}
+
+@media (max-width: 860px) {
+    .contacts {
+        display: none;
+    }
+
+    .contacts__gall {
+        display: none;
     }
 }
 
