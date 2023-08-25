@@ -442,7 +442,7 @@ main {
 
 @media (min-width: 300px) and (max-width:640px){
     .afisha__wrapper {
-        grid-template-columns: repeat(1, minmax(110px,1fr));
+        grid-template-columns: repeat(2, minmax(110px,1fr));
     }
 
     .someText {
