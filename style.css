@@ -513,7 +513,7 @@ main {
 
     .about__div {
         font-size: 20px;
-        width: 100%;
+        width: 80%;
     }
 
     .img__cont__center {
@@ -558,7 +558,11 @@ main {
     
     .about__div {
         font-size: 20px;
-        width: 100%;
+        width: 80%;
+    }
+
+    .slideButton {
+        top: 5%;
     }
    
     
