@@ -513,6 +513,12 @@ main {
 
     .about__div {
         font-size: 20px;
+        width: 0;
+    }
+
+    .img__cont__center {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     
